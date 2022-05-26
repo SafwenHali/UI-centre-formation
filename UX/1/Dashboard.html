@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="flex w-full h-screen font-sans text-gray-900 bg-white">
+    <!--Sidebar-->
+    <aside
+      class="flex relative flex-col py-4 px-6 w-80 border-r border-gray-200 bg-gray-50 rounded"
+    >
+        <a href="index.html" class="flex items-center pl-2.5 mb-5 text-gray-800 bg-gradient-to-r from-purple-600 to-orange-400 w-10 h-10 rounded-lg">
+            <span class="self-center ml-10 text-xl font-semibold whitespace-nowrap ">Learn</span>
+         </a>
+         <ul class="space-y-2">
+    
+    <li>
+        <a href="#0" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 ">
+            <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path><path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path></svg>
+            <span class="ml-3">Dashboard</span>
+            </a>
+    </li>
+
+    <button type="button" class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-purple-100-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
+            <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Formations</span>
+            <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+      <ul id="dropdown-example" class=" py-2 space-y-2">
+            <li>
+               <a href="#1" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-purple-100-700">
+                Ajouter Formation
+                </a>                
+            </li>
+            <li>
+               <a href="#2" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-purple-100-700">
+                Consulter Formations
+                </a>
+            </li>
+      </ul>
+
+      <button type="button" class="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-purple-100-700" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+        <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+        <span class="flex-1 ml-3 text-left whitespace-nowrap" sidebar-toggle-item>Formateurs</span>
+        <svg sidebar-toggle-item class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+  <ul id="dropdown-example" class=" py-2 space-y-2">
+        <li>
+           <a href="#3" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-purple-100-700">
+               Ajouter Formateur
+            </a>
+        </li>
+        <li>
+           <a href="#4" class="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-purple-100-700">
+            Consulter Formateurs
+            </a>
+        </li>
+  </ul>
+    
+   
+    <li>
+    <a href="login.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg  hover:bg-gray-100 ">
+    <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"></path></svg>
+    <span class="flex-1 ml-3 whitespace-nowrap">Déconnexion</span>
+    </a>
+    </li>
+    
+    </ul>
+      
+    </aside>
+<!--main-->
+    <main class="overflow-y-scroll flex-1">
+      <div id="0" class="flex flex-col flex-1 py-4 px-10">
+         <!--stats--> 
+         <div class="md:col-span-1">
+            <div class="px-4 sm:px-0">
+              <h3  class="uppercase text-gray-900 tracking-wide text-center md:self-start md:text-left">Dashboard </h3>
+              <p class="mt-1 text-sm text-gray-600 tracking-wide text-center md:self-start md:text-left">
+                Statistiques
+              </p>
+            </div>
+          </div> <br>
+          <div class="shadow overflow-hidden sm:rounded-md">
+            <div class="px-4 py-5 bg-purple-100 sm:p-6">
+         <div class="max-w-xl px-4 py-4 mx-auto">
+            <div class="sm:grid sm:h-32 sm:grid-flow-row sm:gap-4 sm:grid-cols-3">
+                <div id="jh-stats-positive" class="flex flex-col justify-center px-4 py-4 bg-white border border-gray-300 w-40 rounded">
+                    <div>
+                        <div>
+                            <p class="flex items-center justify-end text-green-500 text-md">
+                                <span class="font-bold">6%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path class="heroicon-ui" d="M20 15a1 1 0 002 0V7a1 1 0 00-1-1h-8a1 1 0 000 2h5.59L13 13.59l-3.3-3.3a1 1 0 00-1.4 0l-6 6a1 1 0 001.4 1.42L9 12.4l3.3 3.3a1 1 0 001.4 0L20 9.4V15z"/></svg>
+                            </p>
+                        </div>
+                        <p class="text-3xl font-semibold text-center text-gray-800">72</p>
+                        <p class="text-lg text-center text-gray-500">Node JS</p>
+                    </div>
+                </div>
+    
+                <div id="jh-stats-negative" class="flex flex-col justify-center px-4 py-4 mt-4 bg-white border border-gray-300 rounded sm:mt-0">
+                    <div>
+                        <div>
+                            <p class="flex items-center justify-end text-red-500 text-md">
+                                <span class="font-bold">30%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path class="heroicon-ui" d="M20 9a1 1 0 012 0v8a1 1 0 01-1 1h-8a1 1 0 010-2h5.59L13 10.41l-3.3 3.3a1 1 0 01-1.4 0l-6-6a1 1 0 011.4-1.42L9 11.6l3.3-3.3a1 1 0 011.4 0l6.3 6.3V9z"/></svg>
+                            </p>
+                        </div>
+                        <p class="text-3xl font-semibold text-center text-gray-800">25</p>
+                        <p class="text-lg text-center text-gray-500">Laravel</p>
+                    </div>
+                </div>
+
+                <div id="jh-stats-neutral" class="flex flex-col justify-center px-4 py-4 mt-4 bg-white border border-gray-300 rounded sm:mt-0">
+                    <div>
+                        <div>
+                            <p class="flex items-center justify-end text-gray-500 text-md">
+                                <span class="font-bold">0%</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path class="heroicon-ui" d="M17 11a1 1 0 010 2H7a1 1 0 010-2h10z"/></svg>
+                            </p>
+                        </div>
+                        <p class="text-3xl font-semibold text-center text-gray-800">43</p>
+                        <p class="text-lg text-center text-gray-500">Tailwind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- ajouter formation-->
+        <br> <div class="md:col-span-1">
+            <div class="px-4 sm:px-0">
+              <h3  class="uppercase text-gray-900 tracking-wide text-center md:self-start md:text-left">Formations </h3>
+              <p  id="1" class="mt-1 text-sm text-gray-600 tracking-wide text-center md:self-start md:text-left">
+                Ajouter une Formation
+              </p>
+            </div>
+          </div> <br>
+
+          <form>
+            <div class="shadow overflow-hidden sm:rounded-md">
+              <div class="px-4 py-5 bg-purple-100 sm:p-6">
+                <div class="grid grid-cols-6 gap-6">
+
+                    <div class="col-span-6 sm:col-span-4">
+                        <p class="block text-sm font-medium text-gray-700">Nom Formation
+                            <a class="text-red-500 text-xl">*</a>
+                        </p>
+                        <input type="text" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nom" required">
+                      </div>
+                    
+                      <div class="col-span-6 sm:col-span-4">
+                        <p class="block text-sm font-medium text-gray-700">Matière
+                            <a class="text-red-500 text-xl">*</a>
+                        </p>
+                        <select  class="mt-1 block w-full py-2 px-3 border border-gray-300 text-gray-700 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                          <option class="text-gray-400">--Choisir Matière--</option>
+                          <option >UX/UI</option>
+                          <option >Tailwind</option>
+                          <option >React JS</option>
+                          <option >Node JS</option>
+                          <option >Laravel</option>
+                          <option >Linux</option>
+                          <option >DevOps</option>
+                          
+                      </select>
+                      </div>
+
+                  <div class="col-span-6 sm:col-span-4">
+                    <p class="block text-sm font-medium text-gray-700">Nom Formateur 
+                      <a class="text-red-500 text-xl">*</a>
+                    </p>
+                    <select  class="mt-1 block w-full py-2 px-3 border border-gray-300 text-gray-700 bg-white rounded-lg shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        <option class="text-gray-400">--Choisir formateur--</option>
+                        <option >Sonia Garbouj</option>
+                        <option >Safwen Hali </option>
+                        <option >Yessin Boulila </option>
+                        <option >Aicha Jebri </option>
+                    </select>
+                        <a href="#3"
+                          class=" text-xs ml-3 text-purple-600 hover:text-gray-700 focus:text-purple-700 transition duration-200 ease-in-out">
+                          Ajouter un Nouveau Formateur
+                        </a>
+                  </div>
+
+                  <div class="col-span-6 sm:col-span-4">
+                    <p class="block text-sm font-medium text-gray-700">Date debut
+                      <a class="text-red-500 text-xl">*</a>
+                    </p>
+                    <input type="date" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"  required">
+                  </div>
+    
+                  <div class="col-span-6 sm:col-span-4">
+                      <p class="block text-sm font-medium text-gray-700">Durée
+                          <a class="text-red-500 text-xl">*</a>
+                      </p>
+                      <div class="ml-10">
+                        <input type="radio" name="duree"> Une scéance<br>
+                        <input type="radio" name="duree"> Un mois<br>
+                        <input type="radio" name="duree"> Troi mois<br>
+                        <input type="radio" name="duree"> Six mois<br>
+                    </div>
+                    </div>
+
+                    <div class="col-span-6 sm:col-span-3">
+                        <p class="block text-sm font-medium text-gray-700">Prix
+                          <a class="text-red-500 text-xl">*</a>
+                        </p>
+                        <input type="Number" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Prix en DT/personne" required">
+                      </div>
+                        <br>
+                      <div class="col-span-6 sm:col-span-3">
+                          <p class="block text-sm font-medium text-gray-700">Nombre de places
+                              <a class="text-red-500 text-xl">*</a>
+                          </p>
+                          <input type="number" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="Nombre de place disponible" required">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <a href="#2" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 text-white hover:bg-white hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-out duration-500">
+                              Ajouter
+                            </a>
+                          </div>
+        </form>
+        <!--consulter formation-->
+        <br> <div class="md:col-span-1">
+            <div class="px-4 sm:px-0">
+              <p  id="2" class="mt-1 text-sm text-gray-600 tracking-wide text-center md:self-start md:text-left">
+                Consulter les formations
+              </p>
+            </div>
+          </div> <br>
+
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left text-gray-500">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+    <tr>
+    <th scope="col" class="px-6 py-3">
+    Nom formation
+    </th>
+    <th scope="col" class="px-6 py-3">
+    Matière
+    </th>
+    <th scope="col" class="px-6 py-3">
+    Formateur
+    </th>
+    <th scope="col" class="px-6 py-3">
+    Date
+    </th>
+    <th scope="col" class="px-6 py-3">
+    Durée
+    </th>
+    <th scope="col" class="px-6 py-3">
+    Price
+    </th>
+    <th scope="col" class="px-6 py-3">
+      Nombre places
+    </th>
+    <th scope="col" class="px-6 py-3">
+    <span class="sr-only"></span>
+    </th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--formation1-->
+    <tr class="bg-white hover:bg-gray-50 ">
+    <th scope="row" class="px-6 py-4 font-medium text-gray-900  whitespace-nowrap">
+    Balsamiq
+    </th>
+    <td class="px-6 py-4">
+    UX/UI
+    </td>
+    <td class="px-6 py-4">
+    Sonia Garbouj
+    </td>
+    <td class="px-6 py-4">
+        01/12/2021
+    </td>
+    <td class="px-6 py-4">
+        Trois mois
+    </td>
+    <td class="px-6 py-4">
+    500DT
+    </td>
+    <td class="px-6 py-4">
+    35
+    </td>
+    <td class="px-6 py-4 text-center">
+    <a href="#" class="font-medium text-blue-600  hover:underline">Modifier</a>
+    <a href="#" class="font-medium text-red-600  hover:underline">Supprimer</a>
+    </td>
+    </tr>
+    <!--formation2-->
+    <tr class="bg-white hover:bg-gray-50 ">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900  whitespace-nowrap">
+        Full React JS
+        </th>
+        <td class="px-6 py-4">
+        React JS
+        </td>
+        <td class="px-6 py-4">
+        Safwen Hali
+        </td>
+        <td class="px-6 py-4">
+            21/02/2022
+        </td>
+        <td class="px-6 py-4">
+            Six mois
+        </td>
+        <td class="px-6 py-4">
+        1200DT
+        </td>
+        <td class="px-6 py-4">
+        90
+        </td>
+        <td class="px-6 py-4 text-center">
+        <a href="#" class="font-medium text-blue-600  hover:underline">Modifier</a>
+        <a href="#" class="font-medium text-red-600  hover:underline">Supprimer</a>
+        </td>
+        </tr>
+        <!--formation3-->
+        <tr class="bg-white hover:bg-gray-50 ">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900  whitespace-nowrap">
+        intro Kali
+        </th>
+        <td class="px-6 py-4">
+        Linux
+        </td>
+        <td class="px-6 py-4">
+        Yessin Boulila
+        </td>
+        <td class="px-6 py-4">
+            30/04/2020
+        </td>
+        <td class="px-6 py-4">
+            Un jour
+        </td>
+        <td class="px-6 py-4">
+        00dt
+        </td>
+        <td class="px-6 py-4">
+        100
+        </td>
+        <td class="px-6 py-4 text-center">
+        <a href="#" class="font-medium text-blue-600  hover:underline">Modifier</a>
+        <a href="#" class="font-medium text-red-600  hover:underline">Supprimer</a>
+        </td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+     <!-- ajouter formateur-->
+     <br> <div class="md:col-span-1">
+        <div class="px-4 sm:px-0">
+          <h3  class="uppercase text-gray-900 tracking-wide text-center md:self-start md:text-left">Formateur </h3>
+          <p  id="3" class="mt-1 text-sm text-gray-600 tracking-wide text-center md:self-start md:text-left">
+            Ajouter un Formateur
+          </p>
+        </div>
+      </div> <br>
+
+      <form>
+        <div class="shadow overflow-hidden sm:rounded-md">
+          <div class="px-4 py-5 bg-purple-100 sm:p-6">
+            <div class="grid grid-cols-6 gap-6">
+
+                <div class="col-span-6 sm:col-span-3">
+                    <p class="block text-sm font-medium text-gray-700">Nom 
+                        <a class="text-red-500 text-xl">*</a>
+                    </p>
+                    <input type="text" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Nom" required">
+                  </div>
+                  <div class="col-span-6 sm:col-span-3">
+                    <p class="block text-sm font-medium text-gray-700">Prénom
+                        <a class="text-red-500 text-xl">*</a>
+                    </p>
+                    <input type="text" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Prénom" required">
+                  </div>
+
+              <div class="col-span-6 sm:col-span-4">
+                <p class="block text-sm font-medium text-gray-700">Date Naissance
+                  <a class="text-red-500 text-xl">*</a>
+                </p>
+                <input type="date" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"  required">
+              </div>
+
+              <div class="col-span-6 sm:col-span-4">
+                <p class="block text-sm font-medium text-gray-700">Numéro Téléphone 
+                    <a class="text-red-500 text-xl">*</a>
+                </p>
+                <input type="text" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="00 000 000" required">
+              </div>
+
+              <div class="col-span-6 sm:col-span-4">
+                <p class="block text-sm font-medium text-gray-700">E-mail
+                    <a class="text-red-500 text-xl">*</a>
+                </p>
+                <input type="email" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="nom@mail.com" required">
+              </div>
+
+              <div class="col-span-6 sm:col-span-4">
+                <p class="block text-sm font-medium text-gray-700">Adresse
+                    <a class="text-red-500 text-xl">*</a>
+                </p>
+                <input type="text" class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="00 rue avenue ville 0000" required">
+              </div>
+        
+              <div class="col-span-6 sm:col-span-4">
+                <p class="block text-sm font-medium text-gray-700">Niveau d'étude</p>
+                <div class="ml-10">
+                  <input type="radio" name="niveau"> Bac<br>
+                  <input type="radio" name="niveau"> Licence<br>
+                  <input type="radio" name="niveau"> Mastère<br>
+                  <input type="radio" name="niveau"> Ingénieurat<br>
+                  <input type="radio" name="niveau"> Doctorat<br>
+              </div>
+              </div>
+
+
+                </div>
+            </div>
+        </div>
+           <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+           <a href="#4" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 text-white hover:bg-white hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-out duration-500">
+          Ajouter
+          </a>
+          </div>
+    </form>
+
+    <!-- ajouter formateur-->
+    <br> <div class="md:col-span-1">
+        <div class="px-4 sm:px-0">
+          <p  id="4" class="mt-1 text-sm text-gray-600 tracking-wide text-center md:self-start md:text-left">
+            Consulter Formateurs
+          </p>
+        </div>
+      </div> <br>
+
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+        <tr>
+        <th scope="col" class="px-6 py-3">
+        Id 
+        </th>
+        <th scope="col" class="px-6 py-3">
+        Nom 
+        </th>
+        <th scope="col" class="px-6 py-3">
+        Prénom
+        </th>
+        <th scope="col" class="px-6 py-3">
+        Date Naissance
+        </th>
+        <th scope="col" class="px-6 py-3">
+        Téléphone
+        </th>
+        <th scope="col" class="px-6 py-3">
+        E-mail
+        </th>
+        <th scope="col" class="px-6 py-3">
+          Adresse
+        </th>
+        <th scope="col" class="px-6 py-3">
+        Etudes
+          </th>
+        <th scope="col" class="px-6 py-3">
+        <span class="sr-only"></span>
+        </th>
+        </tr>
+        </thead>
+        <tbody>
+              <!--formation1-->
+        <tr class="bg-white hover:bg-gray-50 ">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900  whitespace-nowrap">
+            01
+            </th>
+            <td class="px-6 py-4">
+            Hali
+            </td>
+            <td class="px-6 py-4">
+            Safwen
+            </td>
+            <td class="px-6 py-4">
+            13/10/1999
+            </td>
+            <td class="px-6 py-4">
+            22-566-000
+            </td>
+            <td class="px-6 py-4">
+            safwenhali@gmail.com
+            </td>
+            <td class="px-6 py-4">
+            200 Ave Hbib Bourguiba Nabeul 8000
+            </td>
+            <td class="px-6 py-4">
+            Licence
+            </td>
+            <td class="px-6 py-4 text-center">
+            <a href="#" class="font-medium text-blue-600  hover:underline">Modifier</a>
+            <a href="#" class="font-medium text-red-600  hover:underline">Supprimer</a>
+            </td>
+            </tr>
+        <!--formation2-->
+        <tr class="bg-white hover:bg-gray-50 ">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900  whitespace-nowrap">
+        02
+        </th>
+        <td class="px-6 py-4">
+        Boulila
+        </td>
+        <td class="px-6 py-4">
+        Yassin
+        </td>
+        <td class="px-6 py-4">
+        30/03/1985
+        </td>
+        <td class="px-6 py-4">
+        27-511-000
+        </td>
+        <td class="px-6 py-4">
+        blyassin@yahoo.com
+        </td>
+        <td class="px-6 py-4">
+        07 Ave farhat hached Nabeul 8000
+        </td>
+        <td class="px-6 py-4">
+        Mastère
+        </td>
+        <td class="px-6 py-4 text-center">
+        <a href="#" class="font-medium text-blue-600  hover:underline">Modifier</a>
+        <a href="#" class="font-medium text-red-600  hover:underline">Supprimer</a>
+        </td>
+        </tr>
+</tbody>
+</table>
+</div>
+    </main>
+</div>
+</body>
+</html>
+          
